@@ -1,0 +1,9 @@
+Ice Cream Shop Invoice
+MINT_CHOCOLATE_CHIP - 1 scoop(s): $2.80
+CHOCOLATE_FUDGE - 1 scoop(s): $3.00
+CHOCOLATE_CHIPS - 1 time(s): $0.50
+FRESH_STRAWBERRIES - 1 time(s): $1.00
+Waffle Cone: $5.00
+Subtotal: $12.30
+Tax: $0.98
+Total Amount Due: $13.28
