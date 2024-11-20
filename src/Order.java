@@ -11,6 +11,19 @@ public class Order {
         this.isWaffleCone = waffleCone;
     }
 
+    public List<Flavor> getFlavors() {
+        return flavors;
+    }
+
+    public List<Topping> getToppings() {
+        return toppings;
+    }
+
+    public boolean isWaffleCone() {
+        return isWaffleCone;
+    }
+
+
     public void addFlavor(Flavor flavor) {
         flavors.add(flavor);
     }
