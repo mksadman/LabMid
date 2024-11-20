@@ -1,0 +1,8 @@
+Ice Cream Shop Invoice
+PISTACHIO_DELIGHT - 1 scoop(s): $3.25
+STRAWBERRY_SWIRL - 1 scoop(s): $2.75
+SPRINKLES - 1 time(s): $0.30
+MARSHMALLOWS - 1 time(s): $0.70
+Subtotal: $7.00
+Tax: $0.56
+Total Amount Due: $7.56
