@@ -23,6 +23,9 @@ public class Order {
         return isWaffleCone;
     }
 
+    public static double getWaffleConePrice() {
+        return WAFFLE_CONE_PRICE;
+    }
 
     public void addFlavor(Flavor flavor) {
         flavors.add(flavor);
