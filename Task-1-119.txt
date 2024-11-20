@@ -1,0 +1,15 @@
+<Line number/Range>, <Identified Code Smell>, Reason
+
+
+Class inventorySystem:
+
+Line 1-198, Large Class, The class has multiple other classes in it, and it is performing too many functions which could be altered into several other shorter classes.
+Line 41-72, Long Method & Long Parameter List, The addProduct function has too many parameters in it, and it does a lot of work which could be shortened and divided into multiple other methods.
+Line 43-62, Conditional Complexity, multiple if statements leading to complex code readability.
+Line 74-102, Switch Statements, Switch cases should be avoided and replaced with polymorphism (method overriding).
+Line 80-93, Magic Numbers, There are random numbers used in the switch cases which can be confusing and hard to understand at first glance which is unwanted.
+Line 104-130, Duplicated Code, Same code structure is used in the three methods in this range.
+Line 140, Message chain, repeated calls from one object to another object.
+
+
+                                    
