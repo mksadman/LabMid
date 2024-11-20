@@ -1,3 +1,5 @@
+package main;
+
 public enum Flavor {
     MINT_CHOCOLATE_CHIP(2.80),
     CHOCOLATE_FUDGE(3.00),

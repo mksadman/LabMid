@@ -1,3 +1,5 @@
+package main;
+
 public enum Topping {
     SPRINKLES(0.30),
     MARSHMALLOWS(0.70),
