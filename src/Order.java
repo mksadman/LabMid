@@ -3,7 +3,7 @@ import java.util.*;
 public class Order {
     private final List<Flavor> flavors = new ArrayList<>();
     private final List<Topping> toppings = new ArrayList<>();
-    private boolean isWaffleCone;
+    private final boolean isWaffleCone;
     private static final double WAFFLE_CONE_PRICE = 5.00;
     private static final double TAX_RATE = 0.08;
 
