@@ -7,19 +7,16 @@ public class InvoiceGenerator {
         try (FileWriter writer = new FileWriter(fileName)) {
             writer.write("Ice Cream Shop Invoice\n");
 
-            // Count the quantities of flavors
             Map<Flavor, Integer> flavorCount = new HashMap<>();
             for (Flavor flavor : order.getFlavors()) {
                 flavorCount.put(flavor, flavorCount.getOrDefault(flavor, 0) + 1);
             }
 
-            // Count the quantities of toppings
             Map<Topping, Integer> toppingCount = new HashMap<>();
             for (Topping topping : order.getToppings()) {
                 toppingCount.put(topping, toppingCount.getOrDefault(topping, 0) + 1);
             }
 
-            // Write flavors to the invoice
             for (Map.Entry<Flavor, Integer> entry : flavorCount.entrySet()) {
                 Flavor flavor = entry.getKey();
                 int quantity = entry.getValue();
@@ -27,7 +24,6 @@ public class InvoiceGenerator {
                 writer.write(String.format("%s - %d scoop(s): $%.2f\n", flavor.name(), quantity, totalCost));
             }
 
-            // Write toppings to the invoice
             for (Map.Entry<Topping, Integer> entry : toppingCount.entrySet()) {
                 Topping topping = entry.getKey();
                 int quantity = entry.getValue();
@@ -35,12 +31,10 @@ public class InvoiceGenerator {
                 writer.write(String.format("%s - %d time(s): $%.2f\n", topping.name(), quantity, totalCost));
             }
 
-            // Add waffle cone cost if applicable
             if (order.isWaffleCone()) {
                 writer.write(String.format("Waffle Cone: $%.2f\n", Order.getWaffleConePrice()));
             }
 
-            // Write totals
             double subtotal = order.calculateSubtotal();
             double tax = order.calculateTax();
             double total = order.calculateTotal();
